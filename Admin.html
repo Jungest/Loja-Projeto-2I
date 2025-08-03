@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel Admin - 2i Suplementos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <img src="logo-2i.png" alt="Logo 2i Suplementos" class="logo" />
+    <h1>Painel Administrativo</h1>
+  </header>
+
+  <main class="painel">
+    <section class="formulario">
+      <h2>Adicionar Produto</h2>
+      <form id="form-produto">
+        <input type="text" id="nome" placeholder="Nome do Produto" required />
+        <input type="text" id="preco" placeholder="Preço" required />
+        <input type="text" id="imagem" placeholder="URL da Imagem" required />
+        <select id="categoria" required>
+          <option value="">Categoria</option>
+          <option value="Proteínas">Proteínas</option>
+          <option value="Pré-treinos">Pré-treinos</option>
+          <option value="Vitaminas">Vitaminas</option>
+          <option value="Creatinas">Creatinas</option>
+          <option value="Termogênicos">Termogênicos</option>
+        </select>
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="lista">
+      <h2>Produtos Cadastrados</h2>
+      <div id="lista-produtos"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
